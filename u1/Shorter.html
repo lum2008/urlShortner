@@ -1,0 +1,61 @@
+<html>
+
+<head>
+		<title> خدمة قص الروابط </title>
+		<meta charset="UTF-8">
+		<meta name="viweport" content="width=device-width, initial scale =1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href ="Shorter.css" rel="stylesheet" type="text/css"/>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+		<script 
+			function var(){
+				var name=document.getElementById().value;
+				var dataString='name='+ name;
+				$.ajax({
+					type:"post",
+					url: "hello.php",
+					data:datastring,
+					cache:false,
+					success: function(html){
+
+					}
+				});
+				return false;
+
+			}
+		 </script>
+
+</head>
+
+<body>
+
+<div class="container">
+    
+	<script>
+		
+		for (var j=0; j<=12; j++)
+		{
+		document.write("<br />")
+		}
+		</script>
+	
+	<div class="row">
+        <div class="col-mid-4">
+            <form action="#" method="post" class="form">
+            <div class="get-in-touch">
+                <h3 class="text-center">
+                    خدمة قص الروابط</h3>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder="الصق الرابط هنا" required />
+                </div>
+                <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modal-1">!قص</button>			
+			</div>
+            </form>
+        </div>
+    </div>
+	
+	
+</div>
+</body>
+</html>
